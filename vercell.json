@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "builds": [
+    { "src": "'gestaoapp/wsgi.py", "use": "@vercel/python" },
+    { "src": "manage.py", "use": "@vercel/python" }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "'gestaoapp/wsgi.py"
+    }
+  ]
+}
