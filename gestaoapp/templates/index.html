@@ -1,0 +1,752 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>FinSmart</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="{% static 'assets/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/aos/aos.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/glightbox/css/glightbox.min.css' %}" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="{% static 'assets/css/main.css' %}" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Multi
+  * Template URL: https://bootstrapmade.com/multi-responsive-bootstrap-template/
+  * Updated: Aug 07 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header d-flex align-items-center sticky-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center">
+
+      <a href="{% url 'index' %}" class="logo d-flex align-items-center me-auto">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="assets/img/logo.png" alt=""> -->
+        <h1 class="sitename">FinSmart</h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="#hero" class="active">Home</a></li>
+          <li><a href="#about">Sobre nós</a></li>
+          <li><a href="#services">Serviços</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#team">Equipe</a></li>
+         
+          <li><a href="#contact">Contactos</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+      <a class="btn-getstarted" href="#about">Fale conosco</a>
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section dark-background">
+
+      <div id="hero-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="5000">
+
+        <div class="carousel-item active">
+          <img src="{% static 'assets/img/hero-carousel/hero-carousel-1.jpg' %}" alt="">
+          <div class="carousel-container">
+            <h2>Bem vindos a FinSmart<br></h2>
+            <p>A melhor consultoria para sua empresa</p>
+            <a href="#featured-services" class="btn-get-started">Nossos Serviços</a>
+          </div>
+        </div><!-- End Carousel Item -->
+
+        <div class="carousel-item">
+          <img src="{% static 'assets/img/hero-carousel/hero-carousel-2.jpg'%}" alt="">
+          <div class="carousel-container">
+            <h2>Fale conosco</h2>
+            <p>Fale connosco e descubra o que a sua empresa precisa para alcaçar seus objectvos
+
+            </p>
+            <a href="#featured-services" class="btn-get-started">Nossos Serviços</a>
+          </div>
+        </div><!-- End Carousel Item -->
+
+        <div class="carousel-item">
+          <img src="{% static 'assets/img/hero-carousel/hero-carousel-3.jpg' %}" alt="">
+          <div class="carousel-container">
+            <h2>FinSmart</h2>
+            <p>Consultoria da sua empresa ao seu dispor</p>
+            <a href="#featured-services" class="btn-get-started">Agende um meeting</a>
+          </div>
+        </div><!-- End Carousel Item -->
+
+        <a class="carousel-control-prev" href="#hero-carousel" role="button" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
+        </a>
+
+        <a class="carousel-control-next" href="#hero-carousel" role="button" data-bs-slide="next">
+          <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
+        </a>
+
+        <ol class="carousel-indicators"></ol>
+
+      </div>
+
+    </section><!-- /Hero Section -->
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Sobre nós</h2>
+        <div><span>Informações </span> <span class="description-title">sobre nós</span></div>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-6 content" data-aos="fade-up" data-aos-delay="100">
+            <p>
+              FinSmart é uma empresa de consultoria dedicada a ajudar negócios a alcançar o seu potencial máximo. Com uma equipa experiente e apaixonada, oferecemos soluções personalizadas que atendem às necessidades específicas de cada cliente.
+            </p>
+            <ul>
+              <li><i class="bi bi-check2-circle"></i> <span>Somos uma equipa dedicada a oferecer produtos e serviços de qualidade, sempre com atenção aos detalhes e respeito pelos nossos clientes..</span></li>
+              <li><i class="bi bi-check2-circle"></i> <span>Trabalhamos diariamente para garantir um atendimento rápido, simpático e eficiente, porque acreditamos que cada cliente merece o melhor..</span></li>
+              <li><i class="bi bi-check2-circle"></i> <span>O nosso compromisso é com a confiança, a qualidade e a satisfação — valores que fazem parte da nossa história desde o primeiro dia.</span></li>
+            </ul>
+          </div>
+
+          
+
+
+
+      </div>
+
+    </section><!-- /About Section -->
+
+    <!-- Stats Section -->
+    <section id="stats" class="stats section">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center">
+            <i class="bi bi-emoji-smile"></i>
+            <div class="stats-item">
+              <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="1" class="purecounter"></span>
+              <p>Clientes Satisfeitos</p>
+            </div>
+          </div><!-- End Stats Item -->
+
+          <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center">
+            <i class="bi bi-journal-richtext"></i>
+            <div class="stats-item">
+              <span data-purecounter-start="0" data-purecounter-end="521" data-purecounter-duration="1" class="purecounter"></span>
+              <p>Projectos</p>
+            </div>
+          </div><!-- End Stats Item -->
+
+          <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center">
+            <i class="bi bi-headset"></i>
+            <div class="stats-item">
+              <span data-purecounter-start="0" data-purecounter-end="1463" data-purecounter-duration="1" class="purecounter"></span>
+              <p>Horas de trabalho</p>
+            </div>
+          </div><!-- End Stats Item -->
+
+          <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center">
+            <i class="bi bi-people"></i>
+            <div class="stats-item">
+              <span data-purecounter-start="0" data-purecounter-end="15" data-purecounter-duration="1" class="purecounter"></span>
+              <p>Trabalhadores</p>
+            </div>
+          </div><!-- End Stats Item -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Stats Section -->
+
+   
+
+        
+
+    <!-- Services Section -->
+    <section id="services" class="services section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Serviços</h2>
+        <div><span>Check os nossos</span> <span class="description-title">Serviços</span></div>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-item  position-relative">
+              <div class="icon">
+                <i class="bi bi-activity"></i>
+              </div>
+              <a href="service-details.html" class="stretched-link">
+                <h3>Contabilidade Online Completa</h3>
+              </a>
+              <p>Gestão digital de receitas, despesas e relatórios financeiros, com acesso total pela plataforma..</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="bi bi-broadcast"></i>
+              </div>
+              <a href="service-details.html" class="stretched-link">
+                <h3> Consultoria Financeira</h3>
+              </a>
+              <p>Ajudamos empresas e empreendedores a tomarem decisões estratégicas com base em dados reais.</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="bi bi-easel"></i>
+              </div>
+              <a href="service-details.html" class="stretched-link">
+                <h3>Gestão de Impostos</h3>
+              </a>
+              <p>Garantimos o cálculo, registo e pagamento correto dos impostos, evitando erros e multas.</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="bi bi-bounding-box-circles"></i>
+              </div>
+              <a href="service-details.html" class="stretched-link">
+                <h3> Relatórios Personalizados</h3>
+              </a>
+              <p>Relatórios financeiros claros, modernos e adaptados ao tipo de negócio do cliente.</p>
+              <a href="service-details.html" class="stretched-link"></a>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="bi bi-calendar4-week"></i>
+              </div>
+              <a href="service-details.html" class="stretched-link">
+                <h3>Atendimento Online e Suporte Contábil</h3>
+              </a>
+              <p>Atendimento direto com contadores certificados via chat, e-mail ou videochamada.</p>
+              <a href="service-details.html" class="stretched-link"></a>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="bi bi-chat-square-text"></i>
+              </div>
+              <a href="service-details.html" class="stretched-link">
+                <h3>Consultoria para Legalização de Empresas</h3>
+              </a>
+              <p>Ajudamos novos empreendedores a formalizar o seu negócio, preparar documentos e registar a empresa legalmente.</p>
+              <a href="service-details.html" class="stretched-link"></a>
+            </div>
+          </div><!-- End Service Item -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Services Section -->
+
+    
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Portfolio</h2>
+        <div><span>Nosso</span> <span class="description-title">Portfolio</span></div>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+
+          <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
+            <li data-filter="*" class="filter-active">Planeamento</li>
+            <li data-filter=".filter-app">atendimento oniline</li>
+            <li data-filter=".filter-product">Relatório personalizados</li>
+            <li data-filter=".filter-branding">Equipe responsável</li>
+          </ul><!-- End Portfolio Filters -->
+
+          <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+              <div class="portfolio-content h-100">
+                <a href="{% static 'assets/img/portfolio/app-1.jpg' %}" data-gallery="portfolio-gallery-app" class="glightbox"><img src="{% static 'assets/img/portfolio/app-1.jpg' %}" class="img-fluid" alt=""></a>
+                <div class="portfolio-info">
+                  <h4><a href="" title="More Details"></a></h4>
+                  <p>FinSmart, a melhor opção para tua empresa</p>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+              <div class="portfolio-content h-100">
+                <a href="% static 'assets\img\portfolio\branding-2.jpg.jpeg' %" data-gallery="portfolio-gallery-app" class="glightbox"><img src="{% static 'assets\img\portfolio\branding-2.jpg.jpeg' %}" class="img-fluid" alt=""></a>
+                <div class="portfolio-info">
+                  <h4><a href="" title="More Details"></a></h4>
+                  <p>FinSmart, a melhor opção para tua empresa</p>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
+              <div class="portfolio-content h-100">
+                <a href="assets/img/portfolio/branding-1.jpg" data-gallery="portfolio-gallery-app" class="glightbox"><img src="{% static 'assets\img\portfolio\WhatsApp Image 2025-10-28 at 17.33.16.jpeg' %}" class="img-fluid" alt=""></a>
+                <div class="portfolio-info">
+                  <h4><a href="" title="More Details"></a></h4>
+                  <p>FinSmart, a melhor opção para tua empresa</p>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
+              <div class="portfolio-content h-100">
+                <a href="assets/img/portfolio/WhatsApp Image 2025-10-28 at 17.33.17 (1)" data-gallery="portfolio-gallery-app" class="glightbox"><img src="{% static 'assets\img\portfolio\branding-2.jpeg' %}" class="img-fluid" alt=""></a>
+                <div class="portfolio-info">
+                  <h4><a href="portfolio-details.html" title="More Details"></a></h4>
+                  <p>FinSmart, a melhor opção para tua empresa</p>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books">
+              <div class="portfolio-content h-100">
+                <a href="assets/img/portfolio/books-1.jpg" data-gallery="portfolio-gallery-app" class="glightbox"><img src="{% static 'assets\img\portfolio\WhatsApp Image 2025-10-28 at 17.33.17 (2).jpeg' %}" class="img-fluid" alt=""></a>
+                <div class="portfolio-info">
+                  <h4><a href="portfolio-details.html" title="More Details"></a></h4>
+                  <p>FinSmart, a melhor opção para tua empresa</p>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+              <div class="portfolio-content h-100">
+                <a href="assets/img/portfolio/app-2.jpg" data-gallery="portfolio-gallery-app" class="glightbox"><img src="{% static 'assets\img\portfolio\WhatsApp Image 2025-10-28 at 17.33.17 (1).jpeg' %}" class="img-fluid" alt=""></a>
+                <div class="portfolio-info">
+                  <h4><a href="portfolio-details.html" title="More Details"></a></h4>
+                  <p>FinSmart, a melhor opção para tua empresa</p>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+              <div class="portfolio-content h-100">
+                <a href="assets/img/portfolio/product-2.jpg" data-gallery="portfolio-gallery-app" class="glightbox"><img src="{% static 'assets\img\portfolio\WhatsApp Image 2025-10-27 at 17.43.24.jpeg' %}" class="img-fluid" alt=""></a>
+                <div class="portfolio-info">
+                  <h4><a href="portfolio-details.html" title="More Details"></a></h4>
+                  <p>FinSmart, a melhor opção para tua empresa</p>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
+              <div class="portfolio-content h-100">
+                <a href="{% static 'assets\img\portfolio\WhatsApp Image 2025-10-28 at 17.33.14.jpeg' %}" data-gallery="portfolio-gallery-app" class="glightbox"><img src="{% static 'assets\img\portfolio\WhatsApp Image 2025-10-28 at 17.33.14.jpeg' %}" class="img-fluid" alt=""></a>
+                <div class="portfolio-info">
+                  <h4><a href="portfolio-details.html" title="More Details"></a></h4>
+                  <p>FinSmart, a melhor opção para tua empresa</p>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books">
+              <div class="portfolio-content h-100">
+                <a href="assets/img/portfolio/books-2.jpg" data-gallery="portfolio-gallery-app" class="glightbox"><img src="{% static 'assets\img\portfolio\books-2.jpeg' %}" class="img-fluid" alt=""></a>
+                <div class="portfolio-info">
+                  <h4><a href="portfolio-details.html" title="More Details">Books 2</a></h4>
+                  <p>FinSmart, a melhor opção para tua empresa</p>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            
+
+
+          </div><!-- End Portfolio Container -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Portfolio Section -->
+
+    <!-- Team Section -->
+    <section id="team" class="team section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Team</h2>
+        <div><span>Nossa Equipe</span> <span class="description-title">Team</span></div>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-xl-3 col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="member">
+              <img src="{% static 'assets/img/team/team-1.jpg' %}" class="img-fluid" alt="">
+              <div class="member-info">
+                <div class="member-info-content">
+                  <h4>Rodrigo Zumba</h4>
+                  <span>Chefe executivo</span>
+                </div>
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter-x"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div><!-- End Team Member -->
+
+          <div class="col-xl-3 col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="member">
+              <img src="{%  static 'assets/img/team/team-2.jpg' %}" class="img-fluid" alt="">
+              <div class="member-info">
+                <div class="member-info-content">
+                  <h4>Inês Katerça</h4>
+                  <span>Consultora de negócio</span>
+                </div>
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter-x"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div><!-- End Team Member -->
+
+          <div class="col-xl-3 col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="member">
+              <img src="{% static 'assets/img/team/team-3.jpg' %}" class="img-fluid" alt="">
+              <div class="member-info">
+                <div class="member-info-content">
+                  <h4>Jhonny Esteves</h4>
+                  <span>Gestor de RH</span>
+                </div>
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter-x"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div><!-- End Team Member -->
+
+          <div class="col-xl-3 col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+            <div class="member">
+              <img src="{% static 'assets/img/team/team-4.jpg' %}" class="img-fluid" alt="">
+              <div class="member-info">
+                <div class="member-info-content">
+                  <h4>Teresa da Costa</h4>
+                  <span>Assistente</span>
+                </div>
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter-x"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div><!-- End Team Member -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Team Section -->
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="pricing section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Planos</h2>
+        <div><span>Check os nossos</span> <span class="description-title">Planos</span></div>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-4" data-aos="zoom-in" data-aos-delay="100">
+            <div class="pricing-item">
+              <h3>Plano grátis</h3>
+              <h4><sup>Kz</sup>0<span> / mês</span></h4>
+              <ul>
+                <li><i class="bi bi-check"></i> <span>Gestão básica de receitas e despesas</span></li>
+                <li><i class="bi bi-check"></i> <span>1 relatório financeiro simples por mês</span></li>
+                <li><i class="bi bi-check"></i> <span>Acesso à plataforma digital</span></li>
+                <li class="na"><i class="bi bi-x"></i> <span>Gestão de imposto</span></li>
+                <li class="na"><i class="bi bi-x"></i> <span>Atendimento full</span></li>
+              </ul>
+              <a href="#" class="buy-btn">Agendar negociação</a>
+            </div>
+          </div><!-- End Pricing Item -->
+
+          <div class="col-lg-4" data-aos="zoom-in" data-aos-delay="200">
+            <div class="pricing-item featured">
+              <h3>Plano economico</h3>
+              <h4><sup>Kz</sup>45mil<span> / mês</span></h4>
+              <ul>
+                <li><i class="bi bi-check"></i> <span>Contabilidade Online Completa</span></li>
+                <li><i class="bi bi-check"></i> <span>Atendimento Online via chat e e-mail</span></li>
+                <li><i class="bi bi-check"></i> <span>Gestão Digital de Faturas (Plano Básico)</span></li>
+                <li><i class="bi bi-check"></i> <span>Relatórios Personalizados (Plano Simples)</span></li>
+                <li><i class="bi bi-check"></i> <span>Gestão de Impostos (Plano Essencial)</span></li>
+              </ul>
+              <a href="#" class="buy-btn">Agendar negociação</a>
+            </div>
+          </div><!-- End Pricing Item -->
+
+          <div class="col-lg-4" data-aos="zoom-in" data-aos-delay="300">
+            <div class="pricing-item">
+              <h3>Plano profissional/completo</h3>
+              <h4><sup>Kz</sup>95mil<span> / mês</span></h4>
+              <ul>
+                <li><i class="bi bi-check"></i> <span>Contabilidade Online Completa </span></li>
+                <li><i class="bi bi-check"></i> <span>Consultoria Financeira Avançada</span></li>
+                <li><i class="bi bi-check"></i> <span>Formação Financeira Profissional (com aulas ao vivo e certificado)</span></li>
+                <li><i class="bi bi-check"></i> <span>Atendimento Full (chat + videochamada + suporte fora do horário)</span></li>
+                <li><i class="bi bi-check"></i> <span>Gestão Digital de Faturas </span></li>
+              </ul>
+              <a href="#" class="buy-btn">Agendar negociação</a>
+            </div>
+          </div><!-- End Pricing Item -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Pricing Section -->
+
+   
+    <!-- Contact Section -->
+    <section id="contact" class="contact section light-background">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Contactos</h2>
+        <div><span>Precisa de ajuda?</span> <span class="description-title">Entre em contacto connosco</span></div>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4">
+          <div class="col-lg-6 ">
+            <div class="row gy-4">
+
+              <div class="col-lg-12">
+                <div class="info-item d-flex flex-column justify-content-center align-items-center" data-aos="fade-up" data-aos-delay="200">
+                  <i class="bi bi-geo-alt"></i>
+                  <h3>Endereço</h3>
+                  <p>Avenida 21 de Janeiro, Universidade Óscar Ribas</p>
+                </div>
+              </div><!-- End Info Item -->
+
+              <div class="col-md-6">
+                <div class="info-item d-flex flex-column justify-content-center align-items-center" data-aos="fade-up" data-aos-delay="300">
+                  <i class="bi bi-telephone"></i>
+                  <h3>Ligue pra nós</h3>
+                  <p>+244 923 456 789</p>
+                </div>
+              </div><!-- End Info Item -->
+
+              <div class="col-md-6">
+                <div class="info-item d-flex flex-column justify-content-center align-items-center" data-aos="fade-up" data-aos-delay="400">
+                  <i class="bi bi-envelope"></i>
+                  <h3>Email</h3>
+                  <p>info@FinSmartcom</p>
+                </div>
+              </div><!-- End Info Item -->
+
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="500">
+              <div class="row gy-4">
+
+                <div class="col-md-6">
+                  <input type="text" name="name" class="form-control" placeholder="Seu nome" required="">
+                </div>
+
+                <div class="col-md-6 ">
+                  <input type="email" class="form-control" name="email" placeholder=" Email" required="">
+                </div>
+
+                <div class="col-md-12">
+                  <input type="text" class="form-control" name="subject" placeholder="Assunto" required="">
+                </div>
+
+                <div class="col-md-12">
+                  <textarea class="form-control" name="message" rows="4" placeholder="Menssagem" required=""></textarea>
+                </div>
+
+                <div class="col-md-12 text-center">
+                  <div class="loading">Loading</div>
+                  <div class="error-message"></div>
+                  <div class="sent-message">Your message has been sent. Thank you!</div>
+
+                  <button type="submit">Enviar</button>
+                </div>
+
+              </div>
+            </form>
+          </div><!-- End Contact Form -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Contact Section -->
+
+  </main>
+
+  <footer id="footer" class="footer dark-background">
+
+    <div class="container footer-top">
+      <div class="row gy-4">
+        <div class="col-lg-4 col-md-6 footer-about">
+          <a href="" class="logo d-flex align-items-center">
+            <span class="sitename">FinSmart</span>
+          </a>
+          <div class="footer-contact pt-3">
+            <p>Avenida 21 de Janeiro</p>
+            <p>Universidade Óscar Ribas</p>
+            <p class="mt-3"><strong>telefone:</strong> <span>+244 923 456 789</span></p>
+            <p><strong>Email:</strong> <span>info@FinSmart.com</span></p>
+          </div>
+          <div class="social-links d-flex mt-4">
+            <a href=""><i class="bi bi-twitter-x"></i></a>
+            <a href=""><i class="bi bi-facebook"></i></a>
+            <a href=""><i class="bi bi-instagram"></i></a>
+            <a href=""><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Useful Links</h4>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Sobre nós</a></li>
+            <li><a href="#">Serviços</a></li>
+            <li><a href="#">Termos de serviço</a></li>
+            <li><a href="#">Politicas e privacidade</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Our Services</h4>
+          <ul>
+            <li><a href="#">Contabidade financeira</a></li>
+            <li><a href="#">Gestão de projectos</a></li>
+            <li><a href="#">Gestão de imposto</a></li>
+            <li><a href="#">Marketing</a></li>
+            <li><a href="#">Relatórios financeiros</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-4 col-md-12 footer-newsletter">
+          <h4>Nossa Newsletter</h4>
+          <p>Subscreva e tenha acesso aos nossos serviços</p>
+          <form action="forms/newsletter.php" method="post" class="php-email-form">
+            <div class="newsletter-form"><input type="email" name="email"><input type="submit" value="Subscribe"></div>
+            <div class="loading">Loading</div>
+            <div class="error-message"></div>
+            <div class="sent-message">Your subscription request has been sent. Thank you!</div>
+          </form>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container copyright text-center mt-4">
+      <p>© <span>Copyright</span> <strong class="px-1 sitename">FinSmart</strong> <span>Direitos Reservados</span></p>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you've purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+        Desenvolvido por <a href="https://www.linkedin.com/in/theresa-chruz-095957303/">Theresa Chruz</a>
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader">
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+
+  <!-- Vendor JS Files -->
+<script src="{% static 'assets/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+<script src="{% static 'assets/vendor/php-email-form/validate.js' %}"></script>
+<script src="{% static 'assets/vendor/aos/aos.js' %}"></script>
+<script src="{% static 'assets/vendor/purecounter/purecounter_vanilla.js' %}"></script>
+<script src="{% static 'assets/vendor/swiper/swiper-bundle.min.js' %}"></script>
+<script src="{% static 'assets/vendor/glightbox/js/glightbox.min.js' %}"></script>
+<script src="{% static 'assets/vendor/imagesloaded/imagesloaded.pkgd.min.js' %}"></script>
+<script src="{% static 'assets/vendor/isotope-layout/isotope.pkgd.min.js' %}"></script>
+
+<!-- Main JS File -->
+<script src="{% static 'assets/js/main.js' %}"></script
+</body>
+
+</html>
